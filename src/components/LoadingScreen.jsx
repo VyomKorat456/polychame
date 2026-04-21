@@ -6,12 +6,13 @@ export function LoadingScreen({ visible }) {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#08090c]"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="flex flex-col items-center gap-6">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,168,83,0.06),transparent_60%)]" />
+          <div className="relative flex flex-col items-center gap-8">
             <motion.div
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -26,7 +27,7 @@ export function LoadingScreen({ visible }) {
               />
             </motion.div>
             <motion.div
-              className="flex gap-1"
+              className="flex gap-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -34,8 +35,8 @@ export function LoadingScreen({ visible }) {
               {[0, 1, 2].map((i) => (
                 <motion.span
                   key={i}
-                  className="h-1 w-1 rounded-full bg-white"
-                  animate={{ opacity: [0.2, 1, 0.2] }}
+                  className="h-1.5 w-1.5 rounded-full bg-amber-500"
+                  animate={{ opacity: [0.25, 1, 0.25], scale: [1, 1.2, 1] }}
                   transition={{
                     duration: 1.2,
                     repeat: Infinity,

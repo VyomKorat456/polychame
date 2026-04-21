@@ -12,8 +12,8 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-white/10 bg-black py-14">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-start lg:justify-between">
+    <footer className="border-t border-white/[0.06] bg-[#050608] py-16">
+      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:flex-row lg:items-start lg:justify-between">
         <div className="text-left">
           <a href="#hero" className="inline-block">
             <BrandLogo
@@ -23,16 +23,16 @@ export function Footer() {
               height={56}
             />
           </a>
-          <p className="mt-4 max-w-xs text-sm text-neutral-500">
+          <p className="mt-5 max-w-xs text-sm text-slate-500">
             Quality, Consistency and Certainty
           </p>
         </div>
 
         <nav aria-label="Footer">
-          <ul className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-neutral-400">
+          <ul className="flex flex-wrap gap-x-10 gap-y-3 text-sm text-slate-500">
             {footerLinks.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="transition hover:text-white">
+                <a href={l.href} className="transition hover:text-amber-400">
                   {l.label}
                 </a>
               </li>
@@ -41,7 +41,7 @@ export function Footer() {
         </nav>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 px-4 pt-8 text-center text-xs text-neutral-600 sm:px-6 sm:text-left">
+      <div className="mx-auto mt-14 max-w-6xl border-t border-white/[0.06] px-4 pt-10 text-center text-xs text-slate-600 sm:px-6 sm:text-left">
         © {year} Overlap Polychem. All rights reserved.
       </div>
     </footer>

@@ -29,7 +29,7 @@ export function WhatsAppButton() {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/40 ring-2 ring-black/20"
+        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/50 ring-2 ring-amber-500/30"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1.2, type: 'spring', stiffness: 400, damping: 22 }}
@@ -41,7 +41,7 @@ export function WhatsAppButton() {
         <WhatsAppGlyph className="h-8 w-8" />
       </motion.a>
       <div
-        className="pointer-events-none absolute bottom-full right-0 mb-2 max-w-[calc(100vw-5rem)] rounded-lg border border-white/10 bg-neutral-900 px-3 py-2 text-sm font-medium whitespace-nowrap text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 sm:bottom-auto sm:top-1/2 sm:right-full sm:mb-0 sm:mr-3 sm:-translate-y-1/2"
+        className="pointer-events-none absolute bottom-full right-0 mb-2 max-w-[calc(100vw-5rem)] rounded-xl border border-white/10 bg-[#12141a] px-3 py-2 text-sm font-medium whitespace-nowrap text-slate-100 opacity-0 shadow-xl shadow-black/40 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 sm:bottom-auto sm:top-1/2 sm:right-full sm:mb-0 sm:mr-3 sm:-translate-y-1/2"
         role="tooltip"
       >
         Contact with WhatsApp

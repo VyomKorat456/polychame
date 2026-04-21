@@ -33,9 +33,9 @@ export function Navbar() {
 
   return (
     <motion.header
-      className={`fixed top-0 right-0 left-0 z-50 transition-[background-color,backdrop-filter,border-color] duration-300 ${
+      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-white/10 bg-black/75 backdrop-blur-md'
+          ? 'border-b border-amber-500/10 bg-[#08090c]/85 shadow-lg shadow-black/20 backdrop-blur-xl'
           : 'border-b border-transparent bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -53,12 +53,12 @@ export function Navbar() {
           />
         </a>
 
-        <ul className="hidden items-center gap-8 text-sm font-medium text-neutral-400 lg:flex">
+        <ul className="hidden items-center gap-1 text-sm font-medium text-slate-400 lg:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="transition-colors hover:text-white"
+                className="rounded-full px-3 py-2 transition-colors hover:bg-white/5 hover:text-amber-400"
               >
                 {l.label}
               </a>
@@ -69,13 +69,13 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden rounded-full border border-white/20 bg-white px-4 py-2 text-sm font-medium text-black transition hover:scale-[1.02] hover:shadow-[0_0_24px_rgba(255,255,255,0.25)] sm:inline-flex"
+            className="hidden rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-2.5 text-sm font-semibold text-[#0a0b0d] shadow-lg shadow-amber-500/20 transition hover:brightness-110 hover:shadow-amber-500/30 sm:inline-flex"
           >
             Contact
           </a>
           <button
             type="button"
-            className="rounded-lg border border-white/15 p-2 text-white lg:hidden"
+            className="rounded-xl border border-white/10 bg-white/5 p-2.5 text-slate-200 lg:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen((v) => !v)}
           >
@@ -85,13 +85,13 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-black/95 px-4 py-6 lg:hidden">
-          <ul className="flex flex-col gap-4 text-sm font-medium text-neutral-300">
+        <div className="border-t border-white/10 bg-[#0c0e14]/98 px-4 py-6 backdrop-blur-xl lg:hidden">
+          <ul className="flex flex-col gap-1 text-sm font-medium text-slate-300">
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="block py-1"
+                  className="block rounded-xl px-3 py-2.5 hover:bg-white/5 hover:text-amber-400"
                   onClick={() => setOpen(false)}
                 >
                   {l.label}
@@ -101,7 +101,7 @@ export function Navbar() {
             <li>
               <a
                 href="#contact"
-                className="mt-2 inline-flex rounded-full border border-white/20 bg-white px-4 py-2 text-black"
+                className="mt-3 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-4 py-3 font-semibold text-[#0a0b0d]"
                 onClick={() => setOpen(false)}
               >
                 Contact

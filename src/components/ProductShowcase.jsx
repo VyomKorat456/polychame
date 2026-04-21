@@ -34,26 +34,28 @@ const items = [
 
 export function ProductShowcase() {
   return (
-    <section id="products" className="scroll-mt-24 bg-neutral-950 py-20 sm:py-28">
+    <section id="products" className="scroll-mt-24 border-t border-white/[0.04] bg-[#0c0e14] py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
-          <h2 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <p className="section-label text-center">Catalogue</p>
+          <h2 className="font-heading mt-3 text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Product showcase
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-400">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-slate-400">
             Engineered materials for modern concrete pumping and reinforcement workflows.
           </p>
         </Reveal>
 
-        <div className="mt-14 grid auto-rows-fr gap-6 sm:grid-cols-2 lg:gap-8">
+        <div className="mt-16 grid auto-rows-fr gap-6 sm:grid-cols-2 lg:gap-8">
           {items.map((item, i) => (
             <Reveal key={item.title} className="h-full" delay={i * 0.06}>
               <motion.article
-                className="group flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/50"
-                whileHover={{ scale: 1.02 }}
+                className="group surface-card surface-card-hover flex h-full min-h-0 flex-col overflow-hidden"
+                whileHover={{ y: -4 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 28 }}
               >
-                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-neutral-900">
+                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#0a0b0d]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d]/40 to-transparent opacity-0 transition group-hover:opacity-100" />
                   <motion.img
                     src={item.image}
                     alt={item.alt}
@@ -63,9 +65,11 @@ export function ProductShowcase() {
                     height={600}
                   />
                 </div>
-                <div className="flex min-h-[8.5rem] flex-1 flex-col border-t border-white/10 p-6 text-left sm:min-h-[9rem]">
-                  <h3 className="line-clamp-2 text-lg font-semibold text-white">{item.title}</h3>
-                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-neutral-400">
+                <div className="flex min-h-[8.5rem] flex-1 flex-col border-t border-white/[0.06] p-6 text-left sm:min-h-[9rem]">
+                  <h3 className="line-clamp-2 font-heading text-lg font-semibold text-white">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-500">
                     {item.description}
                   </p>
                 </div>
