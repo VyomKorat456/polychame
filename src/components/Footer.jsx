@@ -45,6 +45,15 @@ export function Footer() {
         <p>© {year} Overlap Polychem. All rights reserved.</p>
         <p className="mt-2 text-slate-500">
           Created by <span className="text-slate-400">Blakie</span>
+          {' · '}
+          <a
+            href="https://wa.me/917984380930"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-400/95 underline decoration-emerald-500/40 underline-offset-2 transition hover:text-emerald-300"
+          >
+            +91 79843 80930
+          </a>
         </p>
       </div>
     </footer>
