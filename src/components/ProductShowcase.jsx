@@ -10,18 +10,18 @@ const items = [
     alt: 'Elite Slurry Pouch flexible packaging',
   },
   {
-    title: 'Liquid slurry sample',
+    title: 'SBR Waterproofing',
     description:
-      'Homogeneous, ready-to-pump slurry that reduces friction and prepares lines for concrete placement.',
-    image: '/assets/showcase-liquid.png',
-    alt: 'Laboratory beaker with milky white liquid slurry sample',
+      'Milky-white SBR latex admixture for waterproof, flexible cement and mortar—roofs, tanks, bathrooms, repairs, and more.',
+    image: '/assets/showcase-sbr.png',
+    alt: 'SBR latex liquid sample for waterproofing',
   },
   {
-    title: 'Polyfiber (PPF 12mm)',
+    title: 'Glass Fiber',
     description:
-      'Synthetic reinforcement fibers engineered for crack resistance and long-term durability in concrete.',
-    image: '/assets/showcase-polyfiber.png',
-    alt: 'Polypropylene polyfiber strands for concrete reinforcement',
+      'Synthetic reinforcement fibers engineered for crack resistance and long-term durability in concrete and mortar.',
+    image: '/assets/showcase-glass-fiber.png',
+    alt: 'Glass fiber strands for concrete reinforcement',
   },
   {
     title: 'Mesh roll (jali)',
@@ -42,7 +42,7 @@ export function ProductShowcase() {
             Product showcase
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-slate-400">
-            Engineered materials for modern concrete pumping and reinforcement workflows.
+            Engineered materials for modern concrete pumping, waterproofing, and reinforcement.
           </p>
         </Reveal>
 

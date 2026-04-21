@@ -5,10 +5,11 @@ import { BrandLogo } from './BrandLogo'
 
 const links = [
   { href: '#products', label: 'Products' },
+  { href: '#sbr-waterproofing', label: 'SBR' },
   { href: '#how-it-works', label: 'How it works' },
   { href: '#benefits', label: 'Benefits' },
   { href: '#use-cases', label: 'Use cases' },
-  { href: '#polyfiber', label: 'Polyfiber' },
+  { href: '#glass-fiber', label: 'Glass fiber' },
   { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ]

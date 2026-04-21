@@ -5,7 +5,8 @@ import { ProductShowcase } from './components/ProductShowcase'
 import { HowItWorks } from './components/HowItWorks'
 import { Benefits } from './components/Benefits'
 import { UseCases } from './components/UseCases'
-import { PolyfiberSection } from './components/PolyfiberSection'
+import { SBRSection } from './components/SBRSection'
+import { GlassFiberSection } from './components/GlassFiberSection'
 import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
@@ -27,10 +28,11 @@ export default function App() {
       <main>
         <Hero />
         <ProductShowcase />
+        <SBRSection />
         <HowItWorks />
         <Benefits />
         <UseCases />
-        <PolyfiberSection />
+        <GlassFiberSection />
         <About />
         <Contact />
       </main>

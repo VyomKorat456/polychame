@@ -5,36 +5,36 @@ const points = [
   {
     icon: Shield,
     title: 'Crack resistance',
-    text: 'Helps control plastic shrinkage cracking in cementitious mixes.',
+    text: 'Helps distribute stress and limit crack propagation in cementitious mixes.',
   },
   {
     icon: Dumbbell,
-    title: 'Strength enhancement',
-    text: 'Adds secondary reinforcement for improved toughness.',
+    title: 'Strength & reinforcement',
+    text: 'Adds tensile strength and improves toughness in overlays and structural repairs.',
   },
   {
     icon: Hourglass,
     title: 'Durability',
-    text: 'Supports long-term performance in demanding environments.',
+    text: 'Performs in demanding environments when specified and batched correctly.',
   },
 ]
 
-export function PolyfiberSection() {
+export function GlassFiberSection() {
   return (
     <section
-      id="polyfiber"
+      id="glass-fiber"
       className="scroll-mt-24 border-t border-white/[0.04] bg-[#0a0b0d] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal className="order-2 lg:order-1">
-            <p className="section-label">Additive</p>
+            <p className="section-label">Reinforcement</p>
             <h2 className="font-heading mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Polyfiber (PPF 12mm)
+              Glass Fiber
             </h2>
             <p className="mt-5 leading-relaxed text-slate-400">
-              Polypropylene fibers designed to distribute reinforcement throughout the matrix—ideal
-              when you need consistent performance across slabs, overlays, and structural elements.
+              Glass fiber strands for concrete and mortar reinforcement—engineered for crack
+              resistance and long-term durability in slabs, overlays, and repair applications.
             </p>
             <ul className="mt-12 space-y-5">
               {points.map((p) => (
@@ -54,9 +54,9 @@ export function PolyfiberSection() {
           <Reveal className="order-1 lg:order-2" delay={0.1}>
             <div className="relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#12141a] shadow-2xl shadow-black/50 ring-1 ring-amber-500/10">
               <img
-                src="/assets/polyfiber-bag.png"
-                alt="Polyfiber PPF 12mm sample in sealed packaging"
-                className="w-full object-cover"
+                src="/assets/showcase-glass-fiber.png"
+                alt="Glass fiber reinforcement strands for concrete"
+                className="w-full object-cover object-top"
                 loading="lazy"
                 width={640}
                 height={480}
