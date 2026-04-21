@@ -42,7 +42,10 @@ export function Footer() {
       </div>
 
       <div className="mx-auto mt-14 max-w-6xl border-t border-white/[0.06] px-4 pt-10 text-center text-xs text-slate-600 sm:px-6 sm:text-left">
-        © {year} Overlap Polychem. All rights reserved.
+        <p>© {year} Overlap Polychem. All rights reserved.</p>
+        <p className="mt-2 text-slate-500">
+          Created by <span className="text-slate-400">Blakie</span>
+        </p>
       </div>
     </footer>
   )
